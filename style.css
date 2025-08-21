@@ -4,11 +4,13 @@
 body {
     font-family: monospace;
 }
+
 div.p1 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 40px 200px 200px 200px;
 }
+
 div.c1 {
     width: 100%;
     height: 100%;
@@ -22,18 +24,28 @@ div.c1 h1 {
 div.c1 span {
     margin: auto 5px;
 }
+
 div.c2 {
     width: 100%;
     height: 100%;
     grid-column: 1/-1;
     background-color: blanchedalmond;
 }
+
 div.c3 {
     width: 100%;
     height: 100%;
     grid-row: 3/-1;
     background-color: blue;
+    overflow: scroll;
+    display: flex;
 }
+div.c3 img {
+    width: calc(187px * 1.4);
+    height: calc(250px * 1.4);
+    margin: auto;
+}
+
 div.c4 {
     padding: 10px;
     width: 100%;
@@ -43,6 +55,7 @@ div.c4 {
     grid-column: 2;
     background-color: red;
 }
+
 div.c5 {
     display: flex;
     flex-direction: column;
