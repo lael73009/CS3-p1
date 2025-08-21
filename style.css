@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+body {
+    font-family: monospace;
+}
 div.p1 {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -11,6 +14,13 @@ div.c1 {
     height: 100%;
     grid-column: 1/-1;
     background-color: tomato;
+    display: flex;
+}
+div.c1 h1 {
+    margin: auto auto auto 10px;
+}
+div.c1 span {
+    margin: auto 5px;
 }
 div.c2 {
     width: 100%;
