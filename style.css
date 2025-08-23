@@ -5,6 +5,11 @@ body {
     font-family: monospace;
     background-color: whitesmoke;
 }
+p {
+    margin: 15px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid lightgray;
+}
 
 div.p1 {
     display: grid;
@@ -63,11 +68,11 @@ div.c4 {
     background-color: whitesmoke;
     border-top-left-radius: 20px;
 }
-div.c4 p {
+<!-- div.c4 p {
     margin: 15px;
     padding: 10px 10px 20px 10px;
     border: 1px solid lightgray;
-}
+} -->
 
 div.c5 {
     margin: 0;
@@ -91,4 +96,43 @@ div.c5 button {
     width: 110px;
     text-align: left;
     margin: 10px auto 0px 0px;
+}
+
+
+div.p1_personal {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 40px 150px 200px 200px 200px 200px;
+}
+
+div.c2_personal {
+    grid-column: 1/-1;
+    background-color: beige;
+}
+
+div.c3_personal {
+    background-color: palevioletred;
+    grid-row: 3/5;
+    display: flex;
+}
+div.c3_personal img {
+    width: calc(187px * 1.4);
+    height: calc(250px * 1.4);
+    margin: auto;
+}
+
+div.c4_personal {
+    background-color: plum;
+}
+
+div.c5_personal {
+    background-color: thistle;
+    grid-column: 2;
+}
+
+div.c6_personal {
+    background-color: mediumorchid;
+    grid-column: 1;
+    grid-row: 5;
+    padding: 10px
 }
