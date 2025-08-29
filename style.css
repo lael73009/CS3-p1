@@ -105,6 +105,11 @@ div.p1_personal {
     grid-template-rows: 40px 100px 200px 200px 200px 200px;
 }
 
+th.th_personal {
+     text-align:center!important; 
+     height: 30px!important;
+}
+
 div.c2_personal {
     grid-column: 1/-1;
     background-color: beige;
@@ -131,7 +136,7 @@ div.c4_personal td {
     border: 1px solid lightgray;
     border-collapse: collapse;
     text-align: left;
-} 
+}
 div.c4_personal th {
     min-width: 115px;
 }
@@ -142,13 +147,17 @@ tr.ts_personal td {
     height: 10px;
     border: none!important;
     font-size: x-small;
-    padding: 0px 0px 0px 128px;
+    padding: 0px 0px 0px 118px;
 }
 
 div.c5_personal {
     background-color: whitesmoke;
     grid-column: 2;
     padding: 0px 20px 0px 10px;
+    position: relative;
+    top: -30px;
+    display: flex;
+    flex-direction: column;
 }
 div.c5_personal table, 
 div.c5_personal th, 
@@ -158,20 +167,19 @@ div.c5_personal td {
     text-align: left;
 }
 div.c5_personal table {
-    width: 100%
+    width: 100%;
 }
 div.c5_personal td:nth-child(1) {
     text-align: center;
 }
+div.c5_personal a {
+    padding: 5px 0px 0px 0px;
+    font-size: small;
+}
 
 div.c6_personal {
     background-color: whitesmoke;
-    grid-column: 1;
+    grid-column: 1/-1;
     grid-row: 5;
-    padding: 10px
-}
-
-th.th_personal {
-     text-align:center!important; 
-     height: 30px!important;
+    padding: 10px;
 }
