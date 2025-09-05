@@ -229,3 +229,15 @@ div.c3_classes_CS3 {
     flex-direction: column;
     padding: 20px;
 }
+
+.accordion_box > .accordion_header {
+    cursor: pointer;
+}
+.accordion_box > .accordion_body{
+ display: none;
+}
+.accordion_box.accordion_expand > .accordion_body{
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+}
