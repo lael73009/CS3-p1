@@ -7,7 +7,7 @@ body {
 }
 p {
     margin: 15px;
-    padding: 10px 10px 20px 10px;
+    padding: 10px 10px 15px 10px;
     border: 1px solid lightgray;
 }
 
@@ -229,9 +229,23 @@ div.c3_classes_CS3 {
     flex-direction: column;
     padding: 20px;
 }
+div.c3_classes_CS3 h2 {
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+}
+div.c3_classes_CS3 button {
+    margin: 15px 0px 0px 15px;
+}
 
 .accordion_box > .accordion_header {
     cursor: pointer;
+    border: 1px solid lightgray;
+    background-color: rgb(236, 236, 236);
+    padding: 5px;
+    margin: 15px;
+    font-weight: 550;
+    font-size: medium;
 }
 .accordion_box > .accordion_body{
  display: none;
@@ -240,4 +254,6 @@ div.c3_classes_CS3 {
     height: 100px;
     width: 100%;
     display: inline-block;
+    position: relative;
+    margin: -16px 15px 0px 15px;
 }
