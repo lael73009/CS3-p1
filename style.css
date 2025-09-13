@@ -237,23 +237,30 @@ div.c3_classes_CS3 h2 {
 div.c3_classes_CS3 button {
     margin: 15px 0px 0px 15px;
 }
-
+.accordion_box {
+    display: block;
+    margin: 0px 15px 15px 15px;
+}
 .accordion_box > .accordion_header {
     cursor: pointer;
     border: 1px solid lightgray;
     background-color: rgb(236, 236, 236);
     padding: 5px;
-    margin: 15px;
+    /*margin: 15px;*/
+    box-sizing: border-box;
+    margin: 0;
     font-weight: 550;
     font-size: medium;
+    width: 100%;
 }
 .accordion_box > .accordion_body{
  display: none;
 }
 .accordion_box.accordion_expand > .accordion_body{
-    height: 100px;
+    height: auto;
     width: 100%;
     display: inline-block;
-    position: relative;
-    margin: -16px 15px 0px 15px;
+    position: static;
+    padding: 5px;
+    margin: 0px;
 }
