@@ -1,0 +1,158 @@
+<html>
+    <head> 
+        <link rel="stylesheet" href="style.css">
+        <title>CS3 Rosier Class:CS3 and Independent Study</title>
+    </head>
+    <body>
+        <div class="p1_classes_CS3">
+
+            <div class="c1">
+                <h1>WHS</h1>
+                <a href="index.html">home</a>
+                <a href="personal.html">personal</a>
+                <a href="classes.html">classes</a>
+                <a href="extracurriculars.html">extracurriculars</a>
+            </div>
+
+            <div class="c2_classes_CS3">
+            </div>
+
+            <div class="c3_classes_CS3">
+                <h2>Google Classroom Code: 4BZDAAH7</h2>
+
+                <div class="bordered_texts">
+                    <p>
+                    Welcome to AP Computer Science Independent Study! 
+                    <br> Students will be able to select various projects 
+                    during the school year to work on. These can be ones of 
+                    their own that they want to do (it must be approved) 
+                    or they can choose one or more of my projects.
+                    <br>
+                    <br>You will have to work on a project for 5 hours 
+                    (120 lines) each week! Due by Friday evening, you will need to:
+                    </p>
+                    <ul>
+                    <li>Type up a summary of what you have done for the week. 
+                    It does not have to be elaborate. You will also
+                    need to turn in your code in an ASCII file (text file),
+                    or snapshot of your code academy progress (show percent,
+                    the entire screen with an icon and url showing)
+                    An assignment turned in late by a week or more will be docked 
+                    5 points per week. Please DO NOT give me your code in a 
+                    wordprocessor, pdf, zip, or other format. Compilers 
+                    need text files (ASCII). There are also labs 
+                    that you can complete in most any language on 
+                    my PythonHelp website. </li>
+                    <li>You will email me your progress. In the subject 
+                    line please put:  
+                    <br> Your full name  Period. ?  Week ?
+                    <br> Please attach the code file(s), NOT zipped or pdf 
+                    or word, in ASCII. </li>
+                    </ul>
+                    <p>
+                    Any grade that is over a week late will have 5 points 
+                    deducted, unless a medical excuse or excused absences.
+                    <br> THE CODE SHOULD COMPILE AND RUN!
+                    <br> 
+                    <br> <a href="https://drive.google.com/file/d/13bT8PAGTZmpkocqUZz9PQ4UA5SpMI7BH/view">Open House Video</a>
+                    </p>
+                </div>
+
+                <div>
+                    <div class="accordion_box">
+                        <h3 class="accordion_header">project extra information</h3>
+                        <p class="accordion_body">
+                        </p>
+
+                    <div class="accordion_box">
+                        <h3 class="accordion_header">sylabus</h3>
+                        <p class="accordion_body">
+                            Textbook: None (online resources).
+                            <br>
+                            <br> Required Materials: A binder/folder to 
+                            hold notes we take in class and various handouts. 
+                            <br>
+                            <br> Grading Policy:  Your grade will be determined on the 
+                            following scale: 
+                            <br> - WEEKLY GRADE: 100%
+                            <bf> </bf>A late grade will be deducted per week for late 
+                            assignments (-5 points per week).  Late work will NOT be 
+                            accepted once the marking period is over.
+                            <br>
+                            <br> Retest Policy/Extra Credit:  Every student will 
+                            be allowed to redo one of the weekly grades if it is a 
+                            failing grade (each marking period). The maximum grade earned is a 70. 
+                            This must be done by the end of the marking period!
+                            <br>
+                            <br> Lab Discipline: While in the computer lab students should
+                            be engaged in working on their projects.  They are required 
+                            to adhere to the Responsible Use Guidelines for the High School 
+                            as presented in the Student Handbook.  
+                            <br>
+                            <br> Cell Phone Policy: Per the Student Handbook: “Students 
+                            are not permitted to display, turn on, or use a personal 
+                            device during instructional class period.” With teacher 
+                            permission, students can access personal devices to listen 
+                            to music during lab time. 
+                            <br>
+                            <br> Dishonesty: Cheating on projects will result in the 
+                            student receiving a zero on the project, a call to parents, and 
+                            a Tier 1 Honor Code violation. Repeated cheating or cheating 
+                            on a project is a Tier 2 violation.
+                            <br>
+                            <br> Tutoring Hours:  8:00am - 8:40am before school 
+                            in room 291A (Design Lab) on Monday - Friday.
+                        </p>
+                    </div>
+
+                    <div class="accordion_box">
+                        <h3 class="accordion_header">calendar</h3>
+                        <p class="accordion_body">
+                            <a href="https://calendar.google.com/calendar/u/0/embed?color=%23f691b2&src=c_classroomf0303a39@group.calendar.google.com">Computer Science III and Independent Study Periods 6, 7, and 8</a>
+                        </p>
+                    </div>
+
+                    <!--make this into a button later-->
+                    <div class="accordion_box">
+                        <h3 class="accordion_header">help</h3>
+                        <p class="accordion_body">
+                            Java help
+                            <br> - <a href="https://www.autowaredevelopment.com/JavaHelp/">Help</a>
+                            <br> - <a href=https://www.w3schools.com/java/default.asp">w3schools</a>
+                            <br>
+                            <br> Python help
+                            <br> - <a href="https://www.autowaredevelopment.com/PythonHelp/">Help</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <button>resources</button>
+                    <button>AP</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const accordionItems = document.querySelectorAll('.accordion_box');
+            //console.log(accordionItems);
+
+            if (accordionItems) {
+                accordionItems.forEach((accordion) => {
+                    accordion.addEventListener('click', (e) => toggleAccordion(e))
+                })
+            }
+
+            const toggleAccordion = (e) => {
+                console.log(e.currentTarget);
+                let target = e.currentTarget;
+
+                if (!target.classList.contains('accordion_expand')) {
+                    target.classList.add('accordion_expand');
+                } else {
+                    target.classList.remove('accordion_expand');
+                }
+            }
+        </script> 
+    </body>
+</html
