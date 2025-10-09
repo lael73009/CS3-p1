@@ -24,6 +24,17 @@ li:before {
     padding-right: 5px;
 }
 
+div.bordered_texts {
+    margin: 15px;
+    padding: 10px 10px 15px 10px;
+    border: 1px solid lightgray;
+}
+div.bordered_texts p {
+    border: none;
+    padding: 0px;
+    margin: 0px
+}
+
 div.p1 {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -200,7 +211,7 @@ div.c6_personal {
 div.p1_classes {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 40px 100px 200px;
+    grid-template-rows: 40px 100px min-content;
 }
 
 div.c2_classes {
@@ -218,6 +229,9 @@ div.c3_classes {
     display: flex;
     justify-items:flex-start;
     padding: 20px;
+}
+div.c3_classes p{
+    flex-grow: 1;
 }
 
 div.p1_classes_CS3 {
@@ -245,7 +259,14 @@ div.c3_classes_CS3 {
 div.c3_classes_CS3 h2 {
     text-align: center;
     color: gray;
+    margin: 0px 0px 5px 0px;
     font-size: 20px;
+}
+div.c3_classes_CS3 h3 {
+    text-align: center;
+    color: rgb(172, 172, 172);
+    margin: 0px;
+    font-size: 15px;
 }
 div.c3_classes_CS3 button {
     margin: 15px 0px 0px 15px;
@@ -276,15 +297,4 @@ div.c3_classes_CS3 button {
     position: static;
     padding: 5px;
     margin: 0px;
-}
-
-div.bordered_texts {
-    margin: 15px;
-    padding: 10px 10px 15px 10px;
-    border: 1px solid lightgray;
-}
-div.bordered_texts p {
-    border: none;
-    padding: 0px;
-    margin: 0px
 }
