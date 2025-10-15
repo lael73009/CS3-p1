@@ -261,13 +261,13 @@ div.c3_classes p{
     flex-grow: 1;
 }
 
-div.p1_classes_CS3 {
+div.p1_classes_CS {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 40px 100px auto;
 }
 
-div.c2_classes_CS3 {
+div.c2_classes_CS {
     width: 100%;
     height: 100%;
     grid-column: 1/-1;
@@ -277,7 +277,7 @@ div.c2_classes_CS3 {
     background-color: rgb(202, 202, 218);
 }
 
-div.c3_classes_CS3 {
+div.c3_classes_CS {
     width: 100%;
     height: 100%;
     grid-column: 1/-1;
@@ -286,7 +286,7 @@ div.c3_classes_CS3 {
     flex-direction: column;
     padding: 20px;
 }
-div.c3_classes_CS3 button {
+div.c3_classes_CS button {
     margin: 15px 0px 0px 15px;
 }
 .accordion_box {
