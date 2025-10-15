@@ -338,17 +338,28 @@ div.c3_extracurriculars_contests {
     width: 100%;
     height: 100%;
     grid-row: 3;
+    grid-column: 1/-1;
+    padding: 15px 0px 0px 0px;
+}
+div.c3_extracurriculars_contests p, div.c3_extracurriculars_contests li {
+    color: gray;
 }
 
 div.c4_extracurriculars_contests {
     width: 100%;
     height: 100%;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 div.c5_extracurriculars_contests {
     width: 100%;
     height: 100%;
     grid-row: 4;
+}
+
+div.c6_extracurriculars_contests {
+    width: 100%;
+    height: 100%;
+    grid-row: 5;
     grid-column: 1/-1;
 }
