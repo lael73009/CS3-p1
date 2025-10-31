@@ -19,17 +19,19 @@ const toggleAccordion = (e) => {
 }
 
 
+const menus = document.querySelectorAll('.menu');
+//console.log(`found menus: ${menus}`);
 
-const menuItems = document.querySelectorAll(".menu");
-
-if (menu) {
-    menuItems.forEach((menuItem) => {
+if (menus) {
+    menus.forEach((menuItem) => {
         menuItem.addEventListener('click', (e) => toggleMenu(e))
     })
 }
 
 const toggleMenu = (e) => {
     console.log(e.currentTarget);
+    //console.log(`toggling menu`);
+    //console.log(e.currentTarget);
     let target = e.currentTarget;
 
     if (!target.classList.contains('menu_expand')) {

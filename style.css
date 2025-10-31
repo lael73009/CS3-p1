@@ -395,3 +395,10 @@ div.c3_extracurriculars_clubs td {
 div.c3_extracurriculars_clubs table {
     width: 100%;
 }
+
+div.menu_content {
+    display: none;
+}
+div.menu.menu_expand >div.menu_content {
+    display: unset;
+}
