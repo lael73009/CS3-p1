@@ -322,32 +322,11 @@
                             <br> - 2nd place (advanced): Vaishnavi Addala, Joseph Jin, Lance He
                             <br> - 1st place (novice): Vaibavi Addala, Athena Luo
                             <br> - 2nd place (novice): James Roberts, Makyra Kim
-                </p>
-                </div
+                    </p>
+                </div>
             </div>
 
-            <script>
-            const accordionItems = document.querySelectorAll('.accordion_box');
-            //console.log(accordionItems);
-
-            if (accordionItems) {
-                accordionItems.forEach((accordion) => {
-                    accordion.addEventListener('click', (e) => toggleAccordion(e))
-                })
-            }
-
-            const toggleAccordion = (e) => {
-                console.log(e.currentTarget);
-                let target = e.currentTarget;
-
-                if (!target.classList.contains('accordion_expand')) {
-                    target.classList.add('accordion_expand');
-                } else {
-                    target.classList.remove('accordion_expand');
-                }
-            }
-        </script> 
-
+            <script type="text/javascript" src="rosier.js"></script>
         </div>
     </body>
 </html>
