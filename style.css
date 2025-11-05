@@ -289,34 +289,6 @@ div.c3_classes_CS {
 div.c3_classes_CS button {
     margin: 15px 0px 0px 15px;
 }
-.accordion_box {
-    display: block;
-    margin: 0px 15px 15px 15px;
-}
-.accordion_box > .accordion_header {
-    cursor: pointer;
-    border: 1px solid lightgray;
-    background-color: rgb(236, 236, 236);
-    padding: 5px;
-    /*margin: 15px;*/
-    box-sizing: border-box;
-    margin: 0;
-    font-weight: 550;
-    font-size: medium;
-    color: rgb(58, 58, 58);
-    width: 100%;
-}
-.accordion_box > .accordion_body{
- display: none;
-}
-.accordion_box.accordion_expand > .accordion_body{
-    height: auto;
-    width: 100%;
-    display: inline-block;
-    position: static;
-    padding: 5px;
-    margin: 0px;
-}
 
 div.p1_extracurriculars_contests {
     display: grid;
@@ -396,9 +368,57 @@ div.c3_extracurriculars_clubs table {
     width: 100%;
 }
 
+div.menu {
+    color: white;
+    position: relative;
+    margin: auto 5px;
+}
 div.menu_content {
     display: none;
 }
 div.menu.menu_expand >div.menu_content {
     display: unset;
+    color: white;
+    position: absolute;
+    background: grey;
+    padding: 5px 10px 5px 10px;
+    margin: 0px;
+    top: 27px;
+    right: -130px;
+    width: 230px;
+    z-index: 100;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+div.menu_content li {
+    margin: 0px 0px 5px 0px;
+}
+
+.accordion_box {
+    display: block;
+    margin: 0px 15px 15px 15px;
+}
+.accordion_box > .accordion_header {
+    cursor: pointer;
+    border: 1px solid lightgray;
+    background-color: rgb(236, 236, 236);
+    padding: 5px;
+    /*margin: 15px;*/
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: 550;
+    font-size: medium;
+    color: rgb(58, 58, 58);
+    width: 100%;
+}
+.accordion_box > .accordion_body{
+ display: none;
+}
+.accordion_box.accordion_expand > .accordion_body{
+    height: auto;
+    width: 100%;
+    display: inline-block;
+    position: static;
+    padding: 5px;
+    margin: 0px;
 }
