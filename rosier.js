@@ -33,6 +33,17 @@ const toggleMenu = (e) => {
     //console.log(`toggling menu`);
     //console.log(e.currentTarget);
     let target = e.currentTarget;
+    const menus = document.querySelectorAll('.menu');
+    //console.log(`found menus: ${menus}`);
+
+    if (menus) {
+        menus.forEach((menuItem) => {
+            //console.log(`${menuItem} -  ${target} -> ${menuItem != target}`);
+            if (menuItem != target && menuItem.classList.contains('menu_expand')) {
+                menuItem.classList.remove('menu_expand');
+            }
+        })
+    }
 
     if (!target.classList.contains('menu_expand')) {
         target.classList.add('menu_expand');
