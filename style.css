@@ -34,6 +34,25 @@ h3 {
     color: rgb(172, 172, 172);
     margin: 0px;
     font-size: 15px;
+    margin: 5px;
+}
+
+a.fake_button {
+    background-color: rgb(175, 19, 19);
+    border-radius: 1px;
+    text-decoration: none;
+    width: 130px;
+    height: 25px;
+    color: white;
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    padding: 5px; 
+    font-size: 12px;
+}
+a.fake_button:hover {
+    background-color: rgb(145, 16, 16);
+    text-decoration: underline;
 }
 
 div.bordered_texts {
@@ -288,10 +307,21 @@ div.c3_classes_CS {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 0px 20px;
 }
 div.c3_classes_CS button {
     margin: 15px 0px 0px 15px;
+}
+div.c4_classes_CS {
+    grid-column: 1/-1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+div.c4_classes_CS a {
+    display: inline-block;
+    margin: 5px;
+    width: 150px;
 }
 
 div.p1_extracurriculars_contests {
