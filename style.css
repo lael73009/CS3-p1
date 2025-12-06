@@ -169,9 +169,14 @@ div.p1_personal {
 @media(min-width: 820px) {
     div.c4_personal {
         grid-template-columns: min-content 1fr 1fr!important;
+        grid-template-rows: min-content min;
     }
     table#contacts, table#schedule {
         margin: 0px auto!important;
+    }
+    div.c7_personal {
+        grid-column: 2/-1!important;
+        grid-row: 2!important;
     }
 }
 
@@ -264,6 +269,7 @@ div.c7_personal {
     background-color: whitesmoke;
     grid-row: 6;
     padding: 10px;
+    grid-column: 1/-1;
 }
 
 div.p1_classes {
