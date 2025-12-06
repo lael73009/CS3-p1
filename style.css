@@ -163,8 +163,16 @@ div.c5 button {
 
 div.p1_personal {
     display: grid;
-    grid-template-columns: min-content auto;
+    grid-template-columns: auto;
     grid-template-rows: 40px 100px min-content min-content min-content 200px;
+}
+@media(min-width: 820px) {
+    div.c4_personal {
+        grid-template-columns: min-content 1fr 1fr!important;
+    }
+    table#contacts, table#schedule {
+        margin: 0px auto!important;
+    }
 }
 
 th.th_personal {
@@ -181,36 +189,38 @@ div.c2_personal {
 }
 
 div.c3_personal {
-    grid-column: 1/-1;
     padding: 15px;
 }
 
 div.c4_personal {
     background-color: whitesmoke;
     grid-row: 4/6;
-    display: flex;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: min-content min-content;
+    padding: 0px 20px 0px 10px;
 }
 div.c4_personal img {
     width: calc(187px * 1.4);
     height: calc(250px * 1.4);
     margin: 0px 30px 0px 30px;
+    grid-row: 1/-1;
 }
-
-div.c5_personal {
-    background-color: whitesmoke;
-    padding: 0px 20px 0px 10px;
-}
-div.c5_personal table, 
-div.c5_personal th, 
-div.c5_personal td {
+table#contacts, 
+table#contacts th, 
+table#contacts td {
     border: 1px solid lightgray;
     border-collapse: collapse;
     text-align: left;
 }
-div.c5_personal th {
+table#contacts {
+    margin: 0px 0px 10px 0px;
+    max-width: 360px;
+}
+table#contacts th {
     min-width: 115px;
 }
-div.c5_personal td {
+table#contacts td {
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -221,7 +231,7 @@ tr.ts_personal td {
     font-size: x-small;
     padding: 0px 0px 0px 118px;
 }
-
+/*
 div.c6_personal {
     background-color: whitesmoke;
     grid-column: 2;
@@ -229,27 +239,29 @@ div.c6_personal {
     display: flex;
     flex-direction: column;
 }
-div.c6_personal table, 
-div.c6_personal th, 
-div.c6_personal td {
+*/
+table#schedule, 
+table#schedule th, 
+table#schedule td {
     border: 1px solid lightgray;
     border-collapse: collapse;
     text-align: left;
 }
-div.c6_personal table {
+table#schedule {
     width: 100%;
+    margin: 10px 0px 0px 0px;
+    max-width: 360px;
 }
-div.c6_personal td:nth-child(1) {
+table#schedule td:nth-child(1) {
     text-align: center;
 }
-div.c6_personal a {
+table#schedule a {
     padding: 5px 0px 0px 0px;
     font-size: small;
 }
 
 div.c7_personal {
     background-color: whitesmoke;
-    grid-column: 1/-1;
     grid-row: 6;
     padding: 10px;
 }
@@ -446,7 +458,8 @@ div.menu_content {
     display: none;
 }
 div.menu.menu_expand > div.menu_content {
-    display: unset;
+    /*transition: all 3s;*/
+    display: block;
     /*opacity: 0.5;
     color: rgb(2, 67, 197);
     background: white;*/
@@ -490,9 +503,10 @@ div.menu_content li:hover a {
     width: 100%;
 }
 .accordion_box > .accordion_body{
- display: none;
+    display: none;
 }
 .accordion_box.accordion_expand > .accordion_body{
+    /*transition: all 3s;*/
     height: auto;
     width: 100%;
     display: inline-block;
