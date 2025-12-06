@@ -298,7 +298,27 @@ div.c3_classes p{
 div.p1_classes_CS {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 40px 100px auto;
+    grid-template-rows: 40px 100px auto auto;
+}
+@media(min-width: 820px) {
+    div.c4_classes_CS {
+        display: grid!important;
+        grid-template-columns: 50% 50%!important;
+        grid-template-rows: auto!important;
+    }
+    /*div.left_box {
+        grid-column: 1!important;
+        grid-row: 1!important;
+    }
+    div.right_box {
+        grid-column: 2!important;
+        grid-row: 1!important;
+    }*/
+    div.c4_classes_CS_3 {
+        display: grid!important;
+        grid-template-columns: 33% 33% 33%!important;
+        grid-template-rows: auto;
+    }
 }
 
 div.c2_classes_CS {
@@ -323,16 +343,41 @@ div.c3_classes_CS {
 div.c3_classes_CS button {
     margin: 15px 0px 0px 15px;
 }
+
 div.c4_classes_CS {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content min-content;
+    grid-column: 1/-1;
+    padding: 0px 20px;
+    width: 100%;
+}
+div.left_box {
+    grid-row: 1;
+}
+div.right_box {
+    grid-row: -1;
+}
+
+div.c5_classes_CS {
     grid-column: 1/-1;
     width: 100%;
     height: 100%;
     text-align: center;
 }
-div.c4_classes_CS a {
+div.c5_classes_CS a {
     display: inline-block;
     margin: 5px;
     width: 150px;
+}
+
+div.c4_classes_CS_3 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content min-content;
+    grid-column: 1/-1;
+    padding: 0px 20px;
+    width: 100%;
 }
 
 div.p1_extracurriculars_contests {
